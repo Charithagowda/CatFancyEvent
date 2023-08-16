@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fancy Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       
+        
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        h1{
+            font-size: 30px;
+            
+        }
+        img{
+            height: 300px;
+            width: 270px;
+            border: 2px solid black;
+            box-shadow: transparent;
+            border-radius: 5%;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+
+        }
+        .flip{
+            background-color: transparent;
+            height: 300px;
+            width: 300px;
+            perspective: 1000px;
+        }
+        .flip-front{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0 ,0,0.2);
+        }
+        .flip:hover .flip-front{
+            transform: rotateY(180deg);
+
+        }
+        .frontside, .flip-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip .flip-back{
+            background-color: lightblue;
+            color: black;
+            transform: rotateY(180deg);
+            justify-content: center;
+            border-radius: 5%;
+        }
+        @media only screen and ( max-width:600px
+        ){
+            body{
+                background-color: rgb(232, 230, 225);
+            }
+        }
+        a{
+            justify-content: left;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-left: 0;
+            background-color: black;
+
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+   
+    <nav style="background-color: black; display: flex;height: 50px;font-size: 30px;justify-content: center;width: 100%;">
+        
+        <a href="#id" >Home</a>
+        <a href="#to">About</a>
+       
+    </nav>
+    
+    <h1 id="id"> Welcome! to the Cat Fancy Event 2023</h1>
+    <p>In ancient Egypt, wealthy families dressed their cats in elegant jewels because they believed cats had magical powers. Nowadays, cat culture has co-opted how we communicate.If you’re a fan of competitions and cats, of course then this is the festival for you. The Cat Fanciers’ Association was founded in 1906 as a non-profit association of member clubs. It’s the world’s largest registry of pedigreed cats, and their International Cat Show is where the finest felines compete for “Best in Show.”</p>
+    <h2>Featured Cats:</h2>
+    <section>
+        <div class="card">
+            <div class="flip">
+                
+                <div class="flip-front">
+                    <div class="frontside">
+                        <img src="http://media.thedenverchannel.com/photo/2012/09/01/Generic-Cat-19700452_69436_ver1.0_320_240.jpg" alt="George" />
+                    </div>
+                <div class="flip-back">
+                    <h1>Rogdoll Cat</h1>
+                    <p>The ragdoll cat is a large, affectionate cat that goes with the flow. Ragdolls are ideal lap cats because they simply go limp with pleasure when they are being petted, giving them their name. This cat breed is one of the largest, but don’t let the size intimidate you. </p>
+                </div>
+
+            </div>
+                
+            </div>
+    
+            <div class="flip">
+                <div class="flip-front">
+                    <div class="frontside">
+                        <img src="https://3.bp.blogspot.com/-WHW5J1uTTCY/UERgSSUImII/AAAAAAAAAMk/JrIBdXHajj0/s320/Cat+Pictures+8.jpg" alt="Sam" >
+                    </div>
+    
+                <div class="flip-back">
+                    <h1>Persian Cat</h1>
+                    <p>The Persian cat, also known as the Persian longhair, is a long-haired breed of cat characterized by a round face and short muzzle. The first documented ancestors of Persian cats might have been imported into Italy from Khorasan as early as around 1620, however this has not been proven.</p>
+                </div> 
+            </div>
+            </div> 
+            <div class="flip">
+                <div class="flip-front">
+                    <div class="frontside">
+                        <img src="https://www.purina.co.uk/sites/default/files/2020-11/8-Fluffy-Cat-BreedsTEASER.jpg" alt="Doug">
+                    </div>
+    
+                <div class="flip-back">
+                    <h1>Bengal Cat.</h1>
+                    <p>The Bengal cat is a domesticated cat breed created from a hybrid of the Asian leopard cat (Prionailurus bengalensis), with domestic cats, especially the spotted Egyptian Mau. It is then usually bred with a breed that demonstrates a friendlier personality, because after breeding a domesticated cat with a wildcat, its friendly personality may not manifest in the kitten. </p>
+                </div> 
+            </div> 
+            </div>
+            <div class="flip">
+                <div class="flip-front">
+                    <div class="frontside">
+                        <img src="https://media.istockphoto.com/id/1453244072/photo/cute-cate.webp?b=1&s=170667a&w=0&k=20&c=qqp8AfgunGzJAh4chKlJm8b86cfIezdScvQn0wUKHmA=" alt="Sally">
+                    </div>
+    
+                <div class="flip-back">
+                    <h1>Birman Cat</h1>
+                    <p>The Birman, also called the "Sacred Cat of Burma", is a domestic cat breed. The Birman is a long-haired, colour-pointed cat distinguished by a silky coat, deep blue eyes, and contrasting white "gloves" on each paw.The breed name is derived from Birmanie, the French form of Burma.</p>
+                </div> 
+            </div> 
+            </div>
+            <p id="to">These cats will be the showrunners this year. George has a long history in cat events, and is looking forward to this year's Cat Fancy Event. Sam is a world-class runner, and will be showing his new techniques. Doug likes to lay around, and will practice his abilities. Sally was invited because her mom made a fit about not coming.
+                The 115th annual Cat Fancy Event is being held in New York City on December 21st. This is the fanciest cat event of the year, starring over 300 different cats. This event was made to show America how great cats really are. There will be treats at the walk in, and for the cat owners there will be a buffet in the lounge. We thank you for coming to our event site, and hope to see you on December 21st. Thank you.
+                </p>
+            <p>&copy : copyright@2023</p>
+            </div>
+            
+        </div>
+    </section>
+    
+</body>
+</html>
